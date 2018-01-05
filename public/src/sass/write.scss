@@ -1,0 +1,97 @@
+body{
+  margin: 0;
+}
+#root,body,html,.gutter-example,.ant-row,.ant-col-3,.ant-col-9,.collection,.articles{
+  height: 100%;
+}
+.collection,.articles{
+  overflow-y: auto;
+}
+pre{
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 20px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #f6f6f6;
+  overflow-x: auto;
+}
+code{
+  font-size: 12px;
+  background: #f6f6f6;
+  color: #657b83;
+}
+table{
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-left: none;
+  word-break: normal;
+}
+th{
+  padding: 8px;
+  border: 1px solid #ddd;
+  line-height: 20px;
+}
+td{
+  padding: 8px;
+  border: 1px solid #ddd;
+  line-height: 20px;
+  vertical-align: middle;
+}
+textarea{
+  width: 100%;
+  height: 90%;
+  min-height: 90%;
+  resize: none;
+  color: #2f2f2f;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  box-sizing: border-box;
+  padding: 40px;
+  border: none;
+  outline: none;
+}
+.result{
+  height: 100%;
+  min-height: 100%;
+  background-color: #fcfaf2;
+  bottom: 0;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+blockquote{
+  padding: 5px 10px;
+  margin-bottom: 25px;
+  background-color: whitesmoke;
+  border-left: 6px solid #b4b4b4;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+  margin-left: 0;
+  margin-right: 0
+}
+.anticon-setting,.anticon-delete{
+  float:right;
+  margin-top:13px
+}
+.anticon-check{
+  color:green;
+}
+.anticon-close{
+  color: red;
+}
+.article{
+  width: 800px;
+  margin: 0 auto;
+}
