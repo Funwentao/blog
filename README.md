@@ -7,3 +7,4 @@ npm install
 webpack
 npm start
 ```
+>然后localhost:3000访问
