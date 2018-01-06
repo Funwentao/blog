@@ -1,7 +1,9 @@
 # blog
 react+antd+express+mongodb搭建的博客系统
 
-```js
+```npm
 npm install -g webpack
 npm install
 webpack
+npm start
+```
