@@ -1,5 +1,6 @@
-var htmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+//var htmlWebpackPlugin = require('html-webpack-plugin');
+//var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var webpack = require('webpack');
 module.exports = {
     entry:{
         app:'./public/src/js/app.js',
@@ -34,5 +35,21 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins:[
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true,
+            output: {
+                comments: false,
+            },
+            compress: {
+                warnings: false
+            }
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+            },
+        }),
+    ]
 }
